@@ -7,7 +7,7 @@ Choose the appropriate branch to clone project for selected board:
 * arria10 SoC
 
 ### Generate Verilog from rdl:
-    `peakrdl regblock registers.rdl -o outputs/ --cpuif axi4-lite-flat`
+    peakrdl regblock registers.rdl -o outputs/ --cpuif axi4-lite-flat
 
 ### Output files generation:
 1. Open quartus from folder quartus:
