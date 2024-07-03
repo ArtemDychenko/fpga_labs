@@ -1,0 +1,17 @@
+# Files
+*.txt
+*.stp
+*.qws
+transcript
+hps_sdram_p0_summary.csv
+hps.sopcinfo
+vsim.wlf
+
+# Directories
+**/outputs/*
+**/work/*
+**/output_files/*
+**/db/*
+**/incremental_db/*
+**/hps_isw_handoff/*
+
