@@ -11,6 +11,7 @@ vsim.wlf
 **/outputs/*
 **/work/*
 **/output_files/*
+**/simulation/*
 **/db/*
 **/incremental_db/*
 **/hps_isw_handoff/*
