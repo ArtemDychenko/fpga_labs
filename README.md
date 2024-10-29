@@ -29,7 +29,7 @@
 
 #### 2. Open quartus:
 
-    quartus soc_system.qpf
+    quartus soc_system.qpf &
 
 #### 2. Run "Compile Design"
 
@@ -41,8 +41,3 @@
 #### 2. Generate soc_system.rbf file:
 
     quartus_cpf -o bitstream_compression=on -c soc_system.sof soc_system.rbf
-
-### <ins>Updating image on SDMMC</ins>
-#### 1. Copy .wic image to sdmmc: use Win32DiskImage or any other available tool
-
-#### 2. Copy soc_system.rbf to sdmmc
