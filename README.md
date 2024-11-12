@@ -1,6 +1,18 @@
 # fpga_groups_project - DE0-NANO-SOC version
 
-#### Update Submodules - after changing branches, run the following command to update all submodules to the commit specified by the branch:
+### <ins>Useful information:</ins>
+[PealRDL - control & status register (CSR) generator toolchain](https://peakrdl.readthedocs.io/en/latest/index.html)
+
+[SVUnit verification framework](https://docs.svunit.org/en/stable/)
+
+[Cyclone® V Hard Processor System (HPS) Technical Reference Manual](https://www.intel.com/content/www/us/en/docs/programmable/683126/21-2/hard-processor-system-technical-reference.html)
+
+[Cyclone V Hard Processor System (HPS) Register Address Map and Definitions](https://www.intel.com/content/www/us/en/programmable/hps/cyclone-v/hps.html)
+
+[AMBA AXI and ACE Protocol Specification](https://developer.arm.com/documentation/ihi0022/e)
+
+### <ins>Update Submodules:</ins>
+#### After changing branches, run the following command to update all submodules to the commit specified by the branch:
 
     git submodule update --init --recursive
 
@@ -18,11 +30,11 @@
 
     cd tests/modul_studenta_unit_test
 
-#### 2. Run test with gui mode:
+#### 2. Run test in gui mode:
 
     ./run_svunit_gui.sh
 
-#### 3. Run test with console mode:
+#### 3. Run test in console mode:
 
     ./run_svunit.sh
 
