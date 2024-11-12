@@ -16,11 +16,11 @@
 
 #### 2. Run test with gui mode:
 
-    vsim -do run.do
+    ./run_svunit_gui.sh
 
 #### 3. Run test with console mode:
 
-    vsim -c -do run.do
+    ./run_svunit.sh
 
 ### <ins>FPGA bitstream files generation from command line:</ins>
 #### 1. Go to quartus directory:

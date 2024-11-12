@@ -1,6 +1,6 @@
 `timescale 1 ns / 1 ns
 
-`include "../svunit_base/svunit_defines.svh"
+`include "../svunit/svunit_base/svunit_defines.svh"
 
 module modul_studenta_unit_test;
     import svunit_pkg::svunit_testcase;
@@ -169,7 +169,7 @@ module modul_studenta_unit_test;
         request.data[1] = 8'h00;
         request.data[2] = 8'h00;
         request.data[3] = 8'h00;
-        request.address = 21'h0000_0004;
+        request.address = 21'h4;
         request.byte_enable = 4'b0001;
         request.access = axi4_lite_pkg::DEFAULT_DATA_ACCESS;
 
@@ -198,7 +198,7 @@ module modul_studenta_unit_test;
         request_t request;
         axi4_lite_pkg::response_t expected_response = RESPONSE_OKAY;
 
-        request.address = 21'h0000_0000;
+        request.address = 21'h0;
         request.access = axi4_lite_pkg::DEFAULT_DATA_ACCESS;
 
         fork

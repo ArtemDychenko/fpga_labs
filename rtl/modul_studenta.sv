@@ -40,7 +40,7 @@ registers u_registers (
 
     .s_axil_awready     (s_axil_awready),
     .s_axil_awvalid     (s_axil_awvalid),
-    .s_axil_awaddr      (s_axil_awaddr[3:0]),
+    .s_axil_awaddr      (s_axil_awaddr[REGISTERS_MIN_ADDR_WIDTH-1:0]),
     .s_axil_awprot      (s_axil_awprot),
 
     .s_axil_wready      (s_axil_wready),
@@ -54,7 +54,7 @@ registers u_registers (
 
     .s_axil_arready     (s_axil_arready),
     .s_axil_arvalid     (s_axil_arvalid),
-    .s_axil_araddr      (s_axil_araddr[3:0]),
+    .s_axil_araddr      (s_axil_araddr[REGISTERS_MIN_ADDR_WIDTH-1:0]),
     .s_axil_arprot      (s_axil_arprot),
 
     .s_axil_rready      (s_axil_rready),
