@@ -173,7 +173,7 @@ module modul_studenta_unit_test;
         request.byte_enable = 4'b0001;
         request.access = axi4_lite_pkg::DEFAULT_DATA_ACCESS;
 
-        $display("LED[0] = %0h", dut.LED[0]);        
+        $display("LED[0] = %0h", dut.LED[0]);
 
         axi4_slave_drv.aclk_posedge();
         axi4_slave_drv.write_request_address(request.address);
@@ -189,9 +189,11 @@ module modul_studenta_unit_test;
 
          $display("LED[0] = %0h", dut.LED[0]); 
 
-        repeat(1000) axi4_slave_drv.aclk_posedge();
+        repeat(10) axi4_slave_drv.aclk_posedge();
         
         `FAIL_UNLESS_EQUAL(dut.LED[0], 1'b1);
+
+        repeat(100) axi4_slave_drv.aclk_posedge();
     `SVTEST_END
 
     `SVTEST(simple_read)
@@ -209,10 +211,13 @@ module modul_studenta_unit_test;
                 request_t captured;
 
                 axi4_slave_drv.read_response(captured.data, captured.response);
+                $display("Captured ID = 0x%0x%0x%0x%0x", captured.data[3], captured.data[2], captured.data[1], captured.data[0]);
                 `FAIL_UNLESS_EQUAL(expected_response, captured.response)
                 `FAIL_UNLESS_EQUAL(captured.data, 32'hABCD_1234)
             end
         join
+
+        repeat(100) axi4_slave_drv.aclk_posedge();
     `SVTEST_END
 `SVUNIT_TESTS_END
 

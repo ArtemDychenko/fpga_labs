@@ -2,6 +2,7 @@
 *.txt
 *.stp
 *.qws
+*.qdf
 transcript
 hps_sdram_p0_summary.csv
 hps.sopcinfo
