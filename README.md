@@ -1,5 +1,9 @@
 # fpga_groups_project - DE0-NANO-SOC version
 
+#### Update Submodules - after changing branches, run the following command to update all submodules to the commit specified by the branch:
+
+    git submodule update --init --recursive
+
 ### <ins>Generate Verilog from rdl:</ins>
 #### 1. Go to rdl directory:
 
