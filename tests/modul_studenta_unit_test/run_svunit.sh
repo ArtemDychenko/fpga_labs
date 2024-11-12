@@ -16,8 +16,8 @@ cd "$SCRIPT_DIR"
 # To run specific unit test template within a given parent directory
 runSVUnit -s questa -o tmp_svunit -r "-suppress 12003,8386" -r "-voptargs=+acc" -r "-sv_seed random" -t modul_studenta_unit_test.sv -r "-do ../modul_studenta_unit_test.do" "$@"
 
-# To run in GUI
+# Example of run in GUI
 # ./run_svunit.sh -r -gui
 
-# To run and set define
+# Example of run and define set
 # ./run_svunit.sh -d MY_DEFINE=1
