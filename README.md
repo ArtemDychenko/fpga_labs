@@ -1,7 +1,7 @@
 # fpga_groups_project - DE0-NANO-SOC version
 
 ### <ins>Useful information:</ins>
-[PealRDL - control & status register (CSR) generator toolchain](https://peakrdl.readthedocs.io/en/latest/index.html)
+[PeakRDL - control & status register (CSR) generator toolchain](https://peakrdl.readthedocs.io/en/latest/index.html)
 
 [SVUnit verification framework](https://docs.svunit.org/en/stable/)
 
