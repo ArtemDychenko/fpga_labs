@@ -1,4 +1,4 @@
-# fpga_groups_project - DE0-NANO-SOC version
+# fpga sproject - DE0-NANO-SOC version
 
 ### <ins>Useful information:</ins>
 [DE0 Nano SoC board](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=167&No=941)
@@ -64,3 +64,8 @@
 
     quartus/output_files/soc_system.sof
     quartus/output_files/soc_system.rbf
+
+### Updating image on SDMMC for De0 Nano SoC Board
+1. Copy [yocto](https://git.pg.edu.pl/ksti-projekty-grupowe-fpga/yocto) image (.wic) for DE0 Nano SoC board to SDMMC: use Win32DiskImage or any other available tool
+
+2. Copy soc_system.rbf to sdmmc
