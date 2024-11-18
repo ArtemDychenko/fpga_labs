@@ -1,6 +1,8 @@
 # fpga_groups_project - DE0-NANO-SOC version
 
 ### <ins>Useful information:</ins>
+[DE0 Nano SoC board](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=167&No=941)
+
 [PeakRDL - control & status register (CSR) generator toolchain](https://peakrdl.readthedocs.io/en/latest/index.html)
 
 [SVUnit verification framework](https://docs.svunit.org/en/stable/)
