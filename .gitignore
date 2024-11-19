@@ -1,14 +1,18 @@
 # Files
+*.bak
 *.txt
 *.stp
 *.qws
 *.qdf
+*.qicache
+hps.pre.xml
 transcript
 hps_sdram_p0_summary.csv
 hps.sopcinfo
 vsim.wlf
 
 # Directories
+**/questa/*
 **/outputs/*
 **/work/*
 **/output_files/*
@@ -18,3 +22,4 @@ vsim.wlf
 **/hps_isw_handoff/*
 **/qdb/*
 **/tmp_svunit/
+**/.qsys_edit/
