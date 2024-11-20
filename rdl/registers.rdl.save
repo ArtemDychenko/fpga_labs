@@ -1,4 +1,3 @@
-
 addrmap registers {
     name = "Test Registers";
     desc = "Register description of example";
@@ -31,39 +30,7 @@ addrmap registers {
             sw   = rw;
             fieldwidth = 8;
             desc = "These bits enable LEDs";
-        } LED[7:0] = 0;
+        } e[7:0] = 0;
 
     } LEDS @ 0x4;
-	
-    regfile {
-        name = "FSM_REGS";
-        reg {
-            name = "enable";
-
-            field {
-                hw   = r;
-                sw   = rw;
-                fieldwidth = 1;
-                desc = "FSM enable";
-            } enable[0:0] = 0;
-
-            field {
-                    hw   = na;
-                    sw   = r;
-                    desc = "Reserved";
-            } reserved[31:1] = 0;
-
-        } FSM_CONTROL @ 0x0;
-
-        reg {
-            name = "FSM Delay";
-            field {
-                hw = r;
-                sw = rw;
-                desc = "FSM Delay";
-            } delay[31:0] = 0;
-        } FSM_DELAY @ 0x4;
-    } FSM_REGS @ 0x8;
-    
-
 };
